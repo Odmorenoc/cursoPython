@@ -119,4 +119,3 @@ else:
                 print("Tienes $" + COP + " COP")
             else:
                 print("Tienes $" + str(USD) + " USD")
-

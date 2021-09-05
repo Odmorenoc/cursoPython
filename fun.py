@@ -79,13 +79,13 @@ def conversor(opcion1):
             print("Tienes $" + str(round(a_dolar(COP,MXN,USD_COP,USD_MXN),2)) + " USD")
     else:
         opcion1=input("por favor escoja una opción valida: ")
-        errores(opcion1)
-def errores(opcion1):
+        error1(opcion1)
+def error1(opcion1):
     if opcion1==("1" or "2" or "3"):
             conversor(int(opcion1))
     else:
         opcion1=input("por favor escoja una opción entre 1, 2 o 3 unicamente: ")
-        errores(opcion1)   
+        error1(opcion1)
 print("Bienvenido al conversor de monedas")
 opcion1=moneda1()
 conversor(opcion1)
