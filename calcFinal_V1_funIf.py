@@ -32,7 +32,7 @@ def a_pesos(opcion2,USD,USD_COP,USD_MXN):
         pesos=USD*USD_MXN
     return pesos
 def conversor(opcion1):
-    if opcion1==1:
+    if int(opcion1)==1:
         COP=cantidad()
         MXN=0
         opcion2=moneda2()
@@ -48,7 +48,7 @@ def conversor(opcion1):
         else:
             USD=a_dolar(COP,MXN,USD_COP,USD_MXN)
             print("Tienes $" + str(round(a_pesos(opcion2,USD,USD_COP,USD_MXN),2)) + " MXN")
-    elif opcion1==2:
+    elif int(opcion1)==2:
         USD=cantidad()
         opcion2=moneda2()
         if opcion2==opcion1 :
@@ -61,7 +61,7 @@ def conversor(opcion1):
             print("Tienes $" + str(round(a_pesos(opcion2,USD,USD_COP,USD_MXN),2)) + " cop")
         else:
             print("Tienes $" + str(round(a_pesos(opcion2,USD,USD_COP,USD_MXN),2)) + " MXN")
-    elif opcion1==3:
+    elif int(opcion1)==3:
         MXN=cantidad()
         COP=0
         opcion2=moneda2()
