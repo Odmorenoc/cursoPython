@@ -31,6 +31,12 @@ def a_pesos(opcion2,USD,USD_COP,USD_MXN):
     else: 
         pesos=USD*USD_MXN
     return pesos
+def error1(opcion1):
+    if opcion1==("1" or "2" or "3"):
+            conversor(int(opcion1))
+    else:
+        opcion1=input("por favor escoja una opción entre 1, 2 o 3 unicamente: ")
+        error1(opcion1)
 def conversor(opcion1):
     if opcion1==1:
         COP=cantidad()
@@ -80,12 +86,6 @@ def conversor(opcion1):
     else:
         opcion1=input("por favor escoja una opción valida: ")
         error1(opcion1)
-def error1(opcion1):
-    if opcion1==("1" or "2" or "3"):
-            conversor(int(opcion1))
-    else:
-        opcion1=input("por favor escoja una opción entre 1, 2 o 3 unicamente: ")
-        error1(opcion1)
 print("Bienvenido al conversor de monedas")
 opcion1=moneda1()
-conversor(opcion1)
+conversor(int(opcion1))
