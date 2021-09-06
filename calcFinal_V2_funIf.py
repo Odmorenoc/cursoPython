@@ -52,13 +52,19 @@ def moneda2 ():
          print("por favor escoja un valor numerico ")
          divisa2=moneda2()
     return divisa2
+def divisa (opcion1):
+    if opcion1==1:
+        resultado="COP"
+    elif opcion1==2:
+        resultado="USD"
+    else:
+        resultado="MXN"
+    return resultado
+
 print("Bienvenido al conversor de monedas")
 opcion1=moneda1()
 cantidad=valor()
 opcion2=moneda2()
 
 resultado=conversor(opcion1,cantidad,opcion2)
-print(str(round(resultado,2)))
-#print("divisa inicial:"+str(opcion1))
-#print("divisa final:"+str(opcion2))
-#print("cantidad"+str(cantidad))
+print("se informa que " + str(cantidad) + " " + divisa(opcion1) + " son: " + str(round(resultado,2)) + " " + divisa(opcion2))
