@@ -1,9 +1,3 @@
-menu="""
-1 - Pesos Colombianos (COP)
-2 - Dolares (USD)
-3 - Pesos Mexicanos (MXN)
-
-"""
 def conversor(opcion1,cantidad,opcion2):
     USD_COP= 3792.72
     USD_MXN= 19.92
@@ -31,12 +25,12 @@ def conversor(opcion1,cantidad,opcion2):
         print("Escogio la misma moneda")
         resultado=cantidad
     return resultado
-def moneda1():
+def moneda(bienvenida,pregunta):
     try:
-        divisa=int(input(menu + "por favor indique de que tipo de moneda quiere convertir: "))
+        divisa=int(input(bienvenida + menu + pregunta))
     except:
          print("por favor escoja un valor numerico ")
-         divisa=moneda1()
+         divisa=moneda(bienvenida,pregunta)
     return divisa
 def valor():
     try:
@@ -45,13 +39,6 @@ def valor():
         print("por favor escoja un valor numerico ")
         moneda=valor()
     return moneda
-def moneda2 ():
-    try:
-        divisa2=int(input(print("Escoja el tipo de moneda de destino"+ menu + "por favor indique a que tipo de moneda quiere convertir ")))
-    except:
-         print("por favor escoja un valor numerico ")
-         divisa2=moneda2()
-    return divisa2
 def divisa (opcion1):
     if opcion1==1:
         resultado="COP"
@@ -61,10 +48,18 @@ def divisa (opcion1):
         resultado="MXN"
     return resultado
 
-print("Bienvenido al conversor de monedas")
-opcion1=moneda1()
-cantidad=valor()
-opcion2=moneda2()
+inicio = str("Bienvenido al conversor de monedas, usted puede escoger entre estas opciones: ")
+menu="""
+1 - Pesos Colombianos (COP)
+2 - Dolares (USD)
+3 - Pesos Mexicanos (MXN)
 
+"""
+moneda1 = str("por favor indique de que divisa quiere convertir: ")
+bienvenida = str("Escoja el tipo de moneda de destino")
+moneda2 = str("por favor indique a que divisa quiere convertir ")
+opcion1=moneda(inicio,moneda1)
+cantidad=valor()
+opcion2=moneda(bienvenida,moneda2)
 resultado=conversor(opcion1,cantidad,opcion2)
-print("se informa que " + str(cantidad) + " " + divisa(opcion1) + " son: " + str(round(resultado,2)) + " " + divisa(opcion2))
+print("se informa que $" + str(round(cantidad,0)) + " " + divisa(opcion1) + " son: $" + str(round(resultado,2)) + " " + divisa(opcion2))
