@@ -1,6 +1,4 @@
-pregunta= """por favor ingrese el texto a evaluar como palindromo: 
-"""
-def palindromo():
+def run():
     texto=input(print(pregunta))
     texto=texto.replace(" ","").lower()
     inverso=texto[::-1]
@@ -10,4 +8,7 @@ def palindromo():
         print("el texto no es un palindromo")
 
 
-palindromo()
+if __name__=="__main__":
+    pregunta= """por favor ingrese el texto a evaluar como palindromo: 
+    """
+    run()
