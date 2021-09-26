@@ -12,17 +12,15 @@
 
 def run():
     dict= {}
-    keys=[i for i in range(1,101) if i%3 == 0]
     
     for i in range(1,101):
         if i%3 == 0 :
-            a=i
-            dict[a]=[i**3 for i in range(1,i+1) if i%3 == 0]
+            dict[i]=[i**3 for i in range(1,i+1) if i%3 == 0]
         else:
             continue
-        
-    
+            
     print(dict)
+
 
 if __name__=="__main__":
     run()
