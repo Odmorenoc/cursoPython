@@ -32,3 +32,5 @@ def adivinanza():
         os.system("clear")
 
 adivinanza()
+
+#sdlkfjdslkfjsn
