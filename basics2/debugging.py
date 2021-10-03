@@ -14,11 +14,14 @@ def run():
     
     try:
         num=int(input(" por favor ingresa un numero: "))
-        print(divisors(num))
-        print(num)
-        print("Termino el programa")
+        if num > 0:
+            print(divisors(num))
+            print(num)
+            print("Termino el programa")
+        else: 
+            raise ValueError
     except ValueError:
-        print("el valor ingresado no es permitido ingrese solo numeros")
+        print("el valor ingresado no es permitido, ingrese solo numeros positivos")
         run()
     pass
 
