@@ -1,12 +1,13 @@
 # Enumeracion exhaustiva
-# algoritmo para enumerar todas las posibilidades para adivinar  la raiz cuadrada exacta de un numero dado.
+# algoritmo para enumerar todas las posibilidades
+# problema: adivinar la raiz cuadrada exacta o aquella más cercana de un numero dado por el usuario.
 
 def run():
     objetivo = int(input("por favor ingrese un numero: "))
     i = 1
     while i**2 < objetivo:
-        i+=1
         print(f'i es: {i}')
+        i+=1
 
     if i**2 == objetivo:
         print(f'la raiz cuadrada exacta de {objetivo} es {i}')
