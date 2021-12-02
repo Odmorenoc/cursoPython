@@ -37,15 +37,15 @@ def probabilidades(simulacion, probabilidad):
     return intentos
 
 if __name__=='__main__':
-    # cantDados = int(input('Numero de dados que quieres tirar: '))
-    # numIntentos =  int(input('Numero de intentos que quieres tirar: '))
-    # numSimulaciones = int(input('Numero de simulaciones que quieres hacer: '))
-    # probabilidad = int(input('Hallar la probabilidad que salga el numero: '))
-    # simulacion = []
-    # simulacion = simulaciones(cantDados, numIntentos, numSimulaciones)
-    simulacion = simulaciones(2,5,1000) 
-    resultado = probabilidades(simulacion, 12) / 1000
-    # resultado = probabilidades(simulacion, probabilidad) / numSimulaciones
-    # print(f'la probabilidad de hallar un {probabilidad} en {numIntentos} intentos con {cantDados} dados es: {resultado}')
-    print(f'la probabilidad de hallar un 12 en 5 intentos con 2 dados es: {resultado}')
+    cantDados = int(input('Numero de dados que quieres tirar: '))
+    numIntentos =  int(input('Numero de intentos que quieres tirar: '))
+    numSimulaciones = int(input('Numero de simulaciones que quieres hacer: '))
+    probabilidad = int(input('Hallar la probabilidad que salga el numero: '))
+    simulacion = []
+    simulacion = simulaciones(cantDados, numIntentos, numSimulaciones)
+    # simulacion = simulaciones(2,10,1000) 
+    # resultado = probabilidades(simulacion, 12) / 1000
+    resultado = probabilidades(simulacion, probabilidad) / numSimulaciones
+    print(f'la probabilidad de hallar un {probabilidad} en {numIntentos} intentos con {cantDados} dados es: {resultado}')
+    # print(f'la probabilidad de hallar un 12 en 10 intentos con 2 dados es: {resultado}')
     
