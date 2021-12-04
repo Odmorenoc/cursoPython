@@ -29,7 +29,7 @@ def gausiana(lista):
     
     grafica = figure(title=f'Distribución normal', x_axis_label='x', y_axis_label='y')
     
-    grafica.line(lista, y, legend=f'Distribución normal',line_color='blue')
+    grafica.line(lista, y, legend=f'Distribución normal', line_color='blue')
 
     show(grafica)
     
