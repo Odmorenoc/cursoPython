@@ -3,7 +3,7 @@ import collections
 
 
 Palos = ['Pica', 'Corazon', 'Diamante', 'Trebol']
-Valores = ['As','dos','tres','cuatro','cinco','seis','siete','ocho','nueve','diez','J','Q','K' ]
+Valores = [1,2,3,4,5,6,7,8,9,10,11,12,13]
 
 def Barajas(Palos, Valores):
     cartas = []
@@ -70,42 +70,24 @@ def Trio(manos):
     # print(trios)
     return trios
 
-def escalera(manos):
+def Escalera(manos):
     resultados = []
     for mano in manos:
-        mano_ordenada = []
-        for posicion in Valores:
-            for valor in mano:
-                if posicion == valor:
-                    mano_ordenada.append(posicion)
-                
-        start = -1
-        for valor in mano_ordenada:
-                if start == -1:
-                    for i in range(len(Valores)):
-                        if valor == Valores[i]:
-                            start=i
-                            break
+        valores = []
+        for carta in mano:
+            valores.append(carta[1])
 
-                valores_concecutivos=0
-                concecutivo=True
-                i=0
-        for valor in mano_ordenada:    
-            if concecutivo == True:
-                for posicion in Valores[start+i:]:
-                    if valor == posicion:
-                        valores_concecutivos+=1
-                        i+=1
-                        break
-                    else:
-                        concecutivo=False
-                        break
-            
-            if valores_concecutivos == 5:
-                resultados.append(mano_ordenada)
-    ganadora = ['As','dos','tres','cuatro','cinco']
-    resultados.append(ganadora)
-    return resultados
+        valores = sorted(valores)
+        resultados.append(valores)
+
+        escalera= []
+        if valores[0]-valores[4] == 4:
+            escalera.append(valores)
+            pass
+    for i in resultados:
+        print(i)
+    print(escalera)
+    return escalera
 
 
 def Probabilidades(Juego, Intentos, NumeroCartas):
@@ -118,7 +100,7 @@ def run(NumeroCartas, Intentos):
     manos = Simulacion(mazo, NumeroCartas, Intentos)
     # pares = Pares(manos)
     # trios = Trio(manos)
-    escaleras = escalera(manos)
+    escaleras = Escalera(manos)
     probabilidad = Probabilidades(escaleras, Intentos, NumeroCartas)
     return probabilidad
 
