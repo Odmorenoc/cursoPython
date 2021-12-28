@@ -130,7 +130,7 @@ def NuevosCentroides(distancias_Minimas):
         c = 1
     else:
         d = 1
-
+        
     c0 = [round((centroide0x/a),2),round((centroide0y/a),2)]
     c1 = [round((centroide1x/b),2),round((centroide1y/b),2)]
     c2 = [round((centroide2x/c),2),round((centroide2y/c),2)]
@@ -141,16 +141,18 @@ def NuevosCentroides(distancias_Minimas):
 
 if __name__ == '__main__':
     centroides = [[2.5, 2.5], [7.5, 2.5], [2.5, 7.5], [7.5, 7.5]]
-    puntos = Vectores(10)
+    # puntos = Vectores(20)
+    puntos = [[4, 10], [8, 5], [10, 2], [5, 1], [5, 6], [9, 4], [8, 7], [1, 0], [1, 8], [4, 6], [2, 1], [2, 4], [1, 3], [7, 8], [1, 7], [9, 8], [5, 7], [7, 1], [0, 1], [2, 2]]
     tuplaPuntos = (puntos[:])
     print(tuplaPuntos)
     e = 1
+    contador = 0
     while e > 0.1:
         print(f'los centroides son:{centroides}\n')
         puntos = (tuplaPuntos[:])
         distMinimas = []
         Minimas(puntos, centroides)
-        print(distMinimas)
+        # print(distMinimas)    
         nuevos_centroides = NuevosCentroides(distMinimas)
         suma = 0.0
         a = 0
@@ -166,6 +168,9 @@ if __name__ == '__main__':
                     continue
             a += 1
         e = suma/4
-        centroides = nuevos_centroides
-    print(centroides)
 
+        centroides = nuevos_centroides
+        contador += 1
+
+        if contador == 10:
+            e = 0.01
