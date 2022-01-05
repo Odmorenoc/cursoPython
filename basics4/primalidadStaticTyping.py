@@ -1,6 +1,6 @@
 def primalidad(n: int) -> bool:
-    m: int =int(n**0.5)+1
-    divisores : list[int] = [i for i in range(2, m) if n % i == 0]
+    raiz: int =int(n**0.5)+1
+    divisores : list[int] = [i for i in range(2, raiz) if n % i == 0]
     esPrimo : bool = len(divisores) == 0
     return esPrimo
         
