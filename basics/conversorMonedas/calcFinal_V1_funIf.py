@@ -47,7 +47,7 @@ def a_pesos(opcion2,USD,USD_COP,USD_MXN):
 
 def error1(opcion1):
     if opcion1==("1" or "2" or "3"):
-            conversor(int(opcion1))
+            opcion1=(int(opcion1))
     else:
         opcion1=input("por favor escoja una opción entre 1, 2 o 3 unicamente: ")
         error1(opcion1)

@@ -8,7 +8,7 @@ def run():
             break
         else:
             continue
-        return r
+        
     if r==0:
         print("es un numero primo!!")
     else:
