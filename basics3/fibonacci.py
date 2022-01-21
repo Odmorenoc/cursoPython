@@ -14,5 +14,5 @@ def run(n):
 
 if __name__=='__main__':
 
-    n = int(input('ingrese un enteropara calcular su numero de fibonacci: '))
+    n = int(input('ingrese un entero para calcular su numero de fibonacci: '))
     print(f'el numero de fibonacci para {n} es {run(n)}')
