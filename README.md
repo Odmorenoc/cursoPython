@@ -1,4 +1,4 @@
-#Readme
+# Readme
 
 ***
 
@@ -6,31 +6,57 @@ Este proyecto corresponde a los archivos generados dentro de los diferentes curs
 
 __Índice__
 1. Basics
+
 1.1. ConversorMonedas
+
 1.2. Recursividad/Bucles
+
 1.3. Texto
+
 2. Basics2
+
 2.1.ListasDiccionarios
+
 2.2. HighOrderFunctions
+
 2.3. ManejoArchivos
+
 2.4. ManejoErrores
+
 2.5. Ejercicios
+
 3. Basics3
+
 3.1. BusquedaOrdenacion
+
 3.2. POO
+
 3.3. ComplejidadAlgoritmica
+
 3.4. Ejercicios
+
 4. Basics4
+
 4.1. Objetos
+
 4.2. StaticTyping
+
 4.3. Ejercicios
+
 5. Statistics
+
 5.1. Estadisticos
+
 5.2. ProgramaciónDinamica
+
 5.3. Probabilidad
+
 5.4. Simulacion
+
 6. Statistics2
+
 6.1. AgrupamientoJerarquico.py
+
 6.2. Kmeans.py
 
 ## 1. Carpeta Basics:
@@ -50,9 +76,9 @@ __calcFinal__
 En sus tres versiones, corresponde a la calculadora realizada
 - La versión V corresponde con if anidados.
 - La versión V1 corresponde a funciones e if.
--La versión V2 es una copia optimizada con los conocimientos del momento.
+- La versión V2 es una copia optimizada con los conocimientos del momento.
 
-###RecursividadBucles
+### RecursividadBucles
 
 en este directorio se guardaron los archivos correspondientes a ejercicios de recursividad y bucles.
 
@@ -80,7 +106,7 @@ Es un programa para adivinar un numero de 1 a 100 con un ciclo while.
 __recursividad.py__
 Es un programa que solicita al usuario un numero e imprime todos el resultado de elevar 2 a la potencia respectiva hasta el número del usuario, utilizando recursividad.
 
-###Texto
+### Texto
 
 Corresponde a los ejercicios realizados para el manejo de cadenas.
 
@@ -90,6 +116,6 @@ Es un programa que identifica si una cadena es un palíndromo o no.
 __proyContrasena.py__
 Es un programa que genera una contraseña aleatoria de 15 caracteres.
 
-##Basic2
+## Basic2
 
 Corresponde a los documentos realizados en el curso de *Python Intermedio: Comprehensions, Lambdas y Manejo de Errores* dictado por __*Facundo García Martoni*__
