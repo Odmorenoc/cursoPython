@@ -78,11 +78,7 @@ En sus tres versiones, corresponde a la calculadora realizada
 - La versión V1 corresponde a funciones e if.
 - La versión V2 es una copia optimizada con los conocimientos del momento.
 
-<<<<<<< HEAD
-### RecursividadBucles
-=======
 ### 1.2. RecursividadBucles
->>>>>>> 03e3421
 
 en este directorio se guardaron los archivos correspondientes a ejercicios de recursividad y bucles.
 
@@ -110,11 +106,8 @@ Es un programa para adivinar un numero de 1 a 100 con un ciclo while.
 __recursividad.py__
 Es un programa que solicita al usuario un numero e imprime todos el resultado de elevar 2 a la potencia respectiva hasta el número del usuario, utilizando recursividad.
 
-<<<<<<< HEAD
-### Texto
-=======
+
 ### 1.3. Texto
->>>>>>> 03e3421
 
 Corresponde a los ejercicios realizados para el manejo de cadenas.
 
