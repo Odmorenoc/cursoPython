@@ -13,7 +13,7 @@ def mensajePersonalizado(mensaje):
     return conMensaje
 
 
-@mayusculas
+# @mayusculas
 @mensajePersonalizado(f'hola ')
 def mensaje(nombre):
     return print(f'{nombre}, recibiste un mensaje') 
